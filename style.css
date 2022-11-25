@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital-clock {
+  color: #fff;
+  background-color: #2d2f41;
+  width: 75%;
+  height: 70%;
+  padding: 20px 45px;
+  box-shadow: 0 10px 25px #2d2f41;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours, .minutes, .seconds {
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+.hours, .colon, .minutes, .seconds, .period, .date {
+  background: linear-gradient(180deg, #06beb6, #48b1bf);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.period {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.colon {
+  font-size: 4rem;
+  color: gray;
+}
+
+.date {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .digital-clock {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .digital-clock {
+    height: 100vh;
+    border-radius: 0;
+  }
+  .hours, .minutes, .seconds {
+    font-size: 4rem;
+  }
+  .period, .date {
+    font-size: 1.7rem;
+  }
+  .colon {
+    font-size: 2.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
